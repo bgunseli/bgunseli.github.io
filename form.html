@@ -3,56 +3,83 @@
 <html>
 
 <head>
-<title>Form</title>
+    <title>Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <style>
+        .navbar-brand {
+            padding: 0px;
+        }
+        .navbar-brand>img {
+            height: 100%;
+            padding: 15px;
+            width: auto;
+        }
+    </style>
 </head>
 
 <body>
 
-<div class="topnav" id="myTopnav">
-  <a href="home.html">Home</a>
-  <a href="hobby.html">My Hobbies</a>
-  <a href="familytree.html">Family Tree</a>
-  <a href="form.html">Form</a>
-  <a href="hometown.html">My Hometown</a>
-  <a href="contact.html">Contact Me</a>
-</div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
 
-<h1>Form</h1>
+            <div>
+                <a class="navbar-brand" href="home.html"><img src="smariologo.png"></a>
+            </div>
 
-<form>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="hobby.html">My Hobbies</a></li>
+                    <li><a href="familytree.html">Family Tree</a></li>
+                    <li class="active"><a href="form.html">Form</a></li>
+                    <li><a href="hometown.html">My Hometown</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
 
-E-mail: <input type="email" name="email"><br>
-Password: <input type="password" name="password"><br>
-Date of Birth: <input type="date" name="dateofbirth"><br>
-City: 
-<select>
-  <option value="ankara">Ankara</option>
-  <option value="istanbul">İstanbul</option>
-  <option value="izmir">İzmir</option>
-  <option value="samsun">Samsun</option>
-</select><br>
-First Name: <input type="text" name="firstname"><br>
-Middle Name(if you have one): <input type="text" name="middlename"><br>
-Last Name: <input type="text" name="lastname"><br>
-About Me:<br>
-<textarea rows="4" cols="40">
-About me...
-</textarea><br>
-Photo: <input type="file" name="photo" accept="image/*"><br>
-Gender: <input type="radio" name="gender" value="male">Male 
-<input type="radio" name="gender" value="female">Female<br>
-Interests<br>
-<input type="checkbox" name="interest1" value="technology">Technology<br>
-<input type="checkbox" name="interest1" value="cars">Cars<br>
-<input type="checkbox" name="interest1" value="fashion">Fashion<br>
-<input type="checkbox" name="interest1" value="travel">Traveling<br>
-<input type="checkbox" name="interest1" value="hunting">Hunting<br>
-<input type="checkbox" name="interest1" value="sport">Sport<br>
-<input type="button" onclick="alert('Thanks for registration!')" value="Submit">
+        </div>
+    </nav>
 
-</form>
+    <h1>Form</h1>
 
+    <form>
 
+    E-mail: <input type="email" name="email"><br>
+    Password: <input type="password" name="password"><br>
+    Date of Birth: <input type="date" name="dateofbirth"><br>
+    City:
+    <select>
+        <option value="ankara">Ankara</option>
+        <option value="istanbul">İstanbul</option>
+        <option value="izmir">İzmir</option>
+        <option value="samsun">Samsun</option>
+    </select><br>
+        First Name: <input type="text" name="firstname"><br>
+        Middle Name(if you have one): <input type="text" name="middlename"><br>
+        Last Name: <input type="text" name="lastname"><br>
+        About Me:<br>
+        <textarea rows="4" cols="40">
+            About me...
+        </textarea><br>
+        Photo:
+        <input type="file" name="photo" accept="image/*"><br>
+        Gender:
+        <input type="radio" name="gender" value="male">Male
+        <input type="radio" name="gender" value="female">Female<br>
+        Interests<br>
+        <input type="checkbox" name="interest1" value="technology">Technology<br>
+        <input type="checkbox" name="interest1" value="cars">Cars<br>
+        <input type="checkbox" name="interest1" value="fashion">Fashion<br>
+        <input type="checkbox" name="interest1" value="travel">Traveling<br>
+        <input type="checkbox" name="interest1" value="hunting">Hunting<br>
+        <input type="checkbox" name="interest1" value="sport">Sport<br>
+        <input type="button" onclick="alert('Thanks for registration!')" value="Submit">
+    </form>
 
 </body>
 

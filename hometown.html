@@ -3,34 +3,63 @@
 <html>
 
 <head>
-<title>Hometown</title>
+    <title>Hometown</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <style>
+        .navbar-brand {
+            padding: 0px;
+        }
+        .navbar-brand>img {
+            height: 100%;
+            padding: 15px;
+            width: auto;
+        }
+    </style>
 </head>
 
 <body>
-<div class="topnav" id="myTopnav">
-  <a href="home.html">Home</a>
-  <a href="hobby.html">My Hobbies</a>
-  <a href="familytree.html">Family Tree</a>
-  <a href="form.html">Form</a>
-  <a href="hometown.html">My Hometown</a>
-  <a href="contact.html">Contact Me</a>
-</div>
 
-<h1>Samsun</h1>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
 
-<p>Samsun is a city on the north coast of Turkey with a population over half a million people. It is the most crowded<br>
-city in Black Sea Region and the most advanced in education, health, industry, trade, transportation and economy.<br>
-Samsun known as "The Capital of Black Sea Region" and "The City of Atatürk".</p>
+            <div>
+                <a class="navbar-brand" href="home.html"><img src="smariologo.png"></a>
+            </div>
 
-<img src="map.png" width="640" height="285">
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="hobby.html">My Hobbies</a></li>
+                    <li><a href="familytree.html">Family Tree</a></li>
+                    <li><a href="form.html">Form</a></li>
+                    <li class="active"><a href="hometown.html">My Hometown</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
 
-<h2>Statue of Honor</h2>
+        </div>
+    </nav>
 
-<p>Statue of Honor, aka Atatürk Monument, is a monument situated at Atatürk Park in İlkadım district of Samsun, Turkey <br>
-dedicated to the landing of Mustafa Kemal Atatürk in Samsun initiating what is later termed the Turkish War of Independence.<br>
-The monument became the landmark of Samsun.</p>
+    <h1>Samsun</h1>
 
-<img src="statueofhonor.png" width="640" height="413">
+    <p>Samsun is a city on the north coast of Turkey with a population over half a million people. It is the most crowded<br>
+    city in Black Sea Region and the most advanced in education, health, industry, trade, transportation and economy.<br>
+    Samsun known as "The Capital of Black Sea Region" and "The City of Atatürk".</p>
+
+    <img src="map.png" class="img-responsive">
+
+    <h2>Statue of Honor</h2>
+
+    <p>Statue of Honor, aka Atatürk Monument, is a monument situated at Atatürk Park in İlkadım district of Samsun, Turkey <br>
+    dedicated to the landing of Mustafa Kemal Atatürk in Samsun initiating what is later termed the Turkish War of Independence.<br>
+    The monument became the landmark of Samsun.</p>
+
+    <img src="statueofhonor.png" class="img-responsive">
 
 </body>
 
