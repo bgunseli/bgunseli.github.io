@@ -1,58 +1,100 @@
 <!DOCTYPE html>
 
+<!--suppress XmlDuplicatedId -->
 <html>
 
 <head>
-<title>Form</title>
+    <title>Form</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
 
-<div class="topnav" id="myTopnav">
-  <a href="home.html">Home</a>
-  <a href="hobby.html">My Hobbies</a>
-  <a href="familytree.html">Family Tree</a>
-  <a href="form.html">Form</a>
-  <a href="hometown.html">My Hometown</a>
-  <a href="contact.html">Contact Me</a>
-</div>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
 
-<h1>Form</h1>
+            <div>
+                <a class="navbar-brand" href="index.html"><img src="media/smariologo.png"></a>
+            </div>
 
-<form>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hobby.html">My Hobbies</a></li>
+                    <li><a href="familytree.html">Family Tree</a></li>
+                    <li class="active"><a href="form.html">Form</a></li>
+                    <li><a href="hometown.html">My Hometown</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="contact.html">Contact Me</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="contact.html">Information</a></li>
+                            <li><a href="https://www.facebook.com/bgunseli">Facebook</a></li>
+                            <li><a href="https://twitter.com/bgunseli5">Twitter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
 
-E-mail: <input type="email" name="email"><br>
-Password: <input type="password" name="password"><br>
-Date of Birth: <input type="date" name="dateofbirth"><br>
-City: 
-<select>
-  <option value="ankara">Ankara</option>
-  <option value="istanbul">Ýstanbul</option>
-  <option value="izmir">Ýzmir</option>
-  <option value="samsun">Samsun</option>
-</select><br>
-First Name: <input type="text" name="firstname"><br>
-Middle Name(if you have one): <input type="text" name="middlename"><br>
-Last Name: <input type="text" name="lastname"><br>
-About Me:<br>
-<textarea rows="4" cols="40">
-About me...
-</textarea><br>
-Photo: <input type="file" name="photo" accept="image/*"><br>
-Gender: <input type="radio" name="gender" value="male">Male 
-<input type="radio" name="gender" value="female">Female<br>
-Interests<br>
-<input type="checkbox" name="interest1" value="technology">Technology<br>
-<input type="checkbox" name="interest1" value="cars">Cars<br>
-<input type="checkbox" name="interest1" value="fashion">Fashion<br>
-<input type="checkbox" name="interest1" value="travel">Traveling<br>
-<input type="checkbox" name="interest1" value="hunting">Hunting<br>
-<input type="checkbox" name="interest1" value="sport">Sport<br>
-<input type="button" onclick="alert('Thanks for registration!')" value="Submit">
+        </div>
+    </nav>
 
-</form>
+    <div class="container">
 
+    <form id="last">
+        <fieldset>
+            <legend style="font-size: 30px" id="first">Personal Information</legend><br><br><br>
+            <div>
+                <div>
+                    <label id="first">E-mail</label> <label id="second">Password</label> <br>
+                    <input class="text" type="email" name="email" id="first"> <input class="text" type="password" name="password" id="second"><br>
+                </div>
+                <br>
+                <div>
+                    <label id="first">Date of Birth</label> <label id="second">City</label> <br>
+                    <input class="text" type="date" name="dateofbirth" id="first"> <br>
+                    <select class="text" id="city">
+                        <option value="ankara">Ankara</option>
+                        <option value="istanbul">Ä°stanbul</option>
+                        <option value="izmir">Ä°zmir</option>
+                        <option value="samsun">Samsun</option>
+                    </select>
+                </div>
+                <br><br>
+                <div>
+                    <label id="first">First Name</label> <label id="second">Last Name</label> <br>
+                    <input class="text" type="text" name="firstname" id="first"> <input class="text" type="text" name="lastname" id="second">
+                </div>
+                <br> <br>
+                <div>
+                    <label id="first">Interests</label> <label id="second">Gender</label>  <label id="upload1">Photo</label> <br>
 
+                    <input id="first" type="checkbox" name="interest1" value="technology"> <label id="firstint">Technology</label><br>
+                    <input id="first" type="checkbox" name="interest1" value="cars"> <label id="firstint">Cars</label><br>
+                    <input id="first" type="checkbox" name="interest1" value="fashion"> <label id="firstint">Fashion</label><br>
+                    <input id="first" type="checkbox" name="interest1" value="travel"> <label id="firstint">Traveling</label><br>
+                    <input id="first" type="checkbox" name="interest1" value="hunting"> <label id="firstint">Hunting</label><br>
+                    <input id="first" type="checkbox" name="interest1" value="sport"> <label id="firstint">Sport</label>
+
+                    <input id="gender1" type="radio" name="gender" value="male"> <label id="firstgender1">Male</label> <br>
+                    <input id="gender2" type="radio" name="gender" value="female"> <label id="firstgender2">Female</label>
+
+                    <input class="text" type="file" name="photo" accept="image/*" id="upload2" value="1">
+                </div>
+                <br>
+                <textarea style="width: 530px" id="first" rows="4" cols="40" placeholder="About me..."></textarea><br><br><br><br><br>
+
+                <input id="first" type="button" onclick="alert('Thanks for registration!')" value="Submit" >
+            </div>
+
+        </fieldset>
+    </form>
+
+    </div>
 
 </body>
 

@@ -3,24 +3,54 @@
 <html>
 
 <head>
-<title>Family Tree</title>
+    <title>Family Tree</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 
 <body>
-<div class="topnav" id="myTopnav">
-  <a href="home.html">Home</a>
-  <a href="hobby.html">My Hobbies</a>
-  <a href="familytree.html">Family Tree</a>
-  <a href="form.html">Form</a>
-  <a href="hometown.html">My Hometown</a>
-  <a href="contact.html">Contact Me</a>
-</div>
 
-<h1>My Family Tree</h1>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
 
-<img src="familytree.png" width="1168" height="674">
+            <div>
+                <a class="navbar-brand" href="index.html"><img src="media/smariologo.png"></a>
+            </div>
 
-<p>My parents was married in August 4, 1996. My father's ancestors came from Selanik. My mother's ancestors came from Georgia.</p>
+            <div>
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="hobby.html">My Hobbies</a></li>
+                    <li class="active"><a href="familytree.html">Family Tree</a></li>
+                    <li><a href="form.html">Form</a></li>
+                    <li><a href="hometown.html">My Hometown</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="contact.html">Contact Me</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="contact.html">Information</a></li>
+                            <li><a href="https://www.facebook.com/bgunseli">Facebook</a></li>
+                            <li><a href="https://twitter.com/bgunseli5">Twitter</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <legend class="ltextbigfamily">My Family Tree</legend>
+
+        <li style="max-width:1150px">My parents was married in August 4, 1996. My father's ancestors came from Selanik. My mother's ancestors came from Georgia.</li>
+
+
+        <img src="media/familytree1.png" class="img-responsive">
+
+    </div>
 
 </body>
 

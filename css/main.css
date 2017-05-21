@@ -1,0 +1,100 @@
+p, li {
+    font-size: 15px;
+    max-width: 800px;
+    width: auto;
+}
+li {
+    list-style: none;
+}
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 30px;
+}
+.navbar-brand {
+    padding: 0px;
+}
+.navbar-brand>img {
+    height: 100%;
+    padding: 15px;
+    width: auto;
+}
+input.text {
+    width: 250px;
+    margin-bottom: 30px;
+}
+form {
+    font-size: 15px;
+    max-width: 600px;
+}
+legend {
+    max-width: 540px;
+}
+#last {
+    margin-bottom: 70px;
+}
+#first {
+    position: absolute;
+    left: 295px;
+}
+
+#second {
+     position: absolute;
+     left: 570px;
+}
+#city {
+    position: absolute;
+    left: 570px;
+    top: 230px;
+    width: 250px;
+}
+#upload1 {
+    position: absolute;
+    left: 570px;
+    top:430px;
+}
+#upload2 {
+    position: absolute;
+    left: 570px;
+    top:455px;
+}
+#firstint {
+    position: absolute;
+    left: 310px;
+    font-weight: normal;
+}
+#gender1 {
+    position: absolute;
+    left: 570px;
+    top:370px;
+}
+#gender2 {
+    position: absolute;
+    left: 570px;
+    top:390px;
+}
+#firstgender1 {
+    position: absolute;
+    left: 585px;
+    top:370px;
+    font-weight: normal;
+}
+#firstgender2 {
+    position: absolute;
+    left: 585px;
+    top:390px;
+    font-weight: normal;
+}
+.ltext {
+    font-size: 30px;
+    max-width: 800px;
+}
+.ltextbig {
+     font-size: 40px;
+     max-width: 800px;
+ }
+.ltextbigfamily {
+    font-size: 40px;
+    max-width: 1150px;
+}
